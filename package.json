@@ -1,0 +1,38 @@
+{
+	"name": "jquery-source-code-analysis",
+	"version": "1.0.0",
+	"description": "This is the source code of jquery source code analysis series（这是 jquery 源码解析系列文章的源码）",
+	"main": "index.js",
+	"directories": {
+		"doc": "doc"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SilenceHVK/jQuery-source-code-analysis.git"
+	},
+	"keywords": [
+		"jquery",
+		"jquery source code analysis",
+		"javascript",
+		"browser",
+		"library",
+		"webpack"
+	],
+	"author": "hvkcoder",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SilenceHVK/jQuery-source-code-analysis/issues"
+	},
+	"homepage": "https://github.com/SilenceHVK/jQuery-source-code-analysis#readme",
+	"devDependencies": {
+		"eslint": "^4.19.0",
+		"webpack": "^4.1.1"
+	},
+	"engines": {
+		"node": ">= 4.0.0",
+		"npm": ">= 3.0.0"
+	}
+}
