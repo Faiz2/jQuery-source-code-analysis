@@ -8,7 +8,8 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "./node_modules/.bin/rollup -c ./rollup.config.js"
+		"build": "./node_modules/.bin/rollup -w -c ./rollup.config.js  --environment TARGET:source",
+		"build-min": "./node_modules/.bin/rollup -w -c ./rollup.config.js  --environment TARGET:min"
 	},
 	"repository": {
 		"type": "git",
@@ -36,6 +37,7 @@
 		"rollup": "^0.57.1",
 		"rollup-plugin-babel": "^3.0.3",
 		"rollup-plugin-commonjs": "^9.1.0",
+		"rollup-plugin-eslint": "^4.0.0",
 		"rollup-plugin-uglify": "^3.0.0"
 	},
 	"engines": {

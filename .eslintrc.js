@@ -2,8 +2,6 @@
 module.exports = {
 	// specifying root
 	"root": true,
-	// specifying Parser
-	// "parser":"",
 	// specifying Parser Options
 	"parserOptions": {
 		// set EcmaScript Version
@@ -26,4 +24,4 @@ module.exports = {
 		// set "semi"
 		"semi": [2, "always"]
 	}
-};
+}
