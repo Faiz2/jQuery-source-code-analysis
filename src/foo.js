@@ -1,1 +1,6 @@
-export default 'hello world!';
+
+class jQuery {
+
+}
+
+export default jQuery;

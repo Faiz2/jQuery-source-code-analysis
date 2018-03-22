@@ -1,10 +1,11 @@
 'use strict';
 const path = require('path');
+const babel = require('rollup-plugin-babel');
 
 const banner =
     '/*!\n' +
-    ' * Vue.js v\n' +
-    ' * (c) 2014-' + new Date().getFullYear() + ' Evan You\n' +
+    ' * jQuery v\n' +
+    ' * (c) 2014-' + new Date().getFullYear() + ' H_VK\n' +
     ' * Released under the MIT License.\n' +
     ' */'
 
@@ -16,5 +17,10 @@ export default {
         banner: banner,
         format: 'umd',
         name: "jQuery"
-    }
+    },
+    plugins: [
+        babel({
+            exclude: 'node_modules/**' // 忽略 node_modules 下的编码
+        })
+    ]
 }
