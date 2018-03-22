@@ -15,7 +15,10 @@ export default {
 		file: path.resolve(__dirname, "./dist/jQuery.js"),
 		banner: banner,
 		format: "umd",
-		name: "jQuery"
+		name: "jQuery",
+		globals: {
+			jQuery: "$"
+		}
 	},
 	plugins: [
 		babel({

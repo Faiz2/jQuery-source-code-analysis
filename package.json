@@ -34,7 +34,9 @@
 		"babel-preset-latest": "^6.24.1",
 		"eslint": "^4.19.0",
 		"rollup": "^0.57.1",
-		"rollup-plugin-babel": "^3.0.3"
+		"rollup-plugin-babel": "^3.0.3",
+		"rollup-plugin-commonjs": "^9.1.0",
+		"rollup-plugin-uglify": "^3.0.0"
 	},
 	"engines": {
 		"node": ">= 4.0.0",
