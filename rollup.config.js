@@ -1,26 +1,25 @@
-'use strict';
-const path = require('path');
-const babel = require('rollup-plugin-babel');
+"use strict";
+const path = require("path");
+const babel = require("rollup-plugin-babel");
 
 const banner =
-    '/*!\n' +
-    ' * jQuery v\n' +
-    ' * (c) 2014-' + new Date().getFullYear() + ' H_VK\n' +
-    ' * Released under the MIT License.\n' +
-    ' */'
-
+	"/*!\n" +
+	" * jQuery source code analysis v3.3.1\n" +
+	" * (c) 2018-" + new Date().getFullYear() + " H_VK\n" +
+	" * This is the source code of jquery source code analysis series.\n" +
+	" */";
 
 export default {
-    input: path.resolve(__dirname, './src/main.js'),
-    output: {
-        file: path.resolve(__dirname, './dist/bundle.js'),
-        banner: banner,
-        format: 'umd',
-        name: "jQuery"
-    },
-    plugins: [
-        babel({
-            exclude: 'node_modules/**' // 忽略 node_modules 下的编码
-        })
-    ]
-}
+	input: path.resolve(__dirname, "./src/jQuery.js"),
+	output: {
+		file: path.resolve(__dirname, "./dist/jQuery.js"),
+		banner: banner,
+		format: "umd",
+		name: "jQuery"
+	},
+	plugins: [
+		babel({
+			exclude: "node_modules/**" // 忽略 node_modules 的代码
+		})
+	]
+};

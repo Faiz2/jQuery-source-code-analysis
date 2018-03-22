@@ -7,7 +7,8 @@
 		"doc": "doc"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "./node_modules/.bin/rollup -c ./rollup.config.js"
 	},
 	"repository": {
 		"type": "git",
@@ -32,6 +33,7 @@
 		"babel-plugin-external-helpers": "^6.22.0",
 		"babel-preset-latest": "^6.24.1",
 		"eslint": "^4.19.0",
+		"rollup": "^0.57.1",
 		"rollup-plugin-babel": "^3.0.3"
 	},
 	"engines": {
