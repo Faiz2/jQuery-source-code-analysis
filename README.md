@@ -1,8 +1,21 @@
 # 从前端工程目录开始
 
 ## 怎么使用
+1. 将项目分支 clone 到本地
 ```bash
-	$ git clone 
+	$ git clone -b project-construction  https://github.com/SilenceHVK/jQuery-source-code-analysis.git
+```
+2. 进入项目目录并安装依赖包
+```bash
+	$ cd jQuery-source-code-analysis && npm install
+```
+3.运行打包比编译
+```bash
+	$ npm run build
+```
+或
+```bash
+	$ npm run build-min
 ```
 
 ## 一、说在前面的话
