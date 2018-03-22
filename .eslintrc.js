@@ -19,8 +19,6 @@ module.exports = {
 	"plugins": [],
 	// configuring rules
 	"rules": {
-		// set "quotes" style is "double" or "single"
-		"quotes": ["error", "double"],
 		// set "semi"
 		"semi": [2, "always"]
 	}
