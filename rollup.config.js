@@ -25,7 +25,7 @@ const plugins = [
 
 // 设置 Rollup 基础打包配置
 const config = {
-	input: path.resolve(__dirname, "./src/jQuery.js"),
+	input: path.resolve(__dirname, "./src/jquery.js"),
 	output: {
 		file: "",
 		banner: banner,
@@ -40,9 +40,9 @@ const config = {
 
 // 获取打包配置的方法
 function getConfig(target) {
-	config.output.file = path.resolve(__dirname, "./dist/jQuery.js");
+	config.output.file = path.resolve(__dirname, "./dist/jquery.js");
 	if (target === "min") {
-		config.output.file = path.resolve(__dirname, "./dist/jQuery.min.js");
+		config.output.file = path.resolve(__dirname, "./dist/jquery.min.js");
 		plugins.push(uglify());
 	}
 	return config;
